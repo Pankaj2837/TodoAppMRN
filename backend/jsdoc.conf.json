@@ -1,0 +1,33 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc","closure"]
+  },
+  "source": {
+    "include": [
+      "./"
+    ],
+    "exclude": [
+      ".meteor",
+      "node_modules"
+    ],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "sourceType": "module",
+  "opts": {
+    "encoding": "utf8",
+    "destination": "../docs/api/backend/",
+    "recurse": true,
+    "verbose": true,
+    "readme": "./README.md"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "search": true
+  }
+}
